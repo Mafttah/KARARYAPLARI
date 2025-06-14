@@ -1,14 +1,12 @@
-for name in range(3): 
-    i = "Bora"
+for name in range(10): 
     Ad = input("Lütfen adınızı giriniz: ")
        
 if not Ad.strip().isalpha():
-
     print("Adınızı girmek için kelime girmelisiniz.")
     print("Ad bilgisini bos gecemezsiniz !")
     print(" Programı tekrar çalıştırıp doğru bir yaş değeri girmelisiniz")
     print("Başa dön")
-    breakpoint
+            
 Soyad = input("Lütfen Soyadınızı giriniz: ")
 if not Soyad.isalpha():
     print("Soyadınızı girmek için kelime girmelisiniz.")
