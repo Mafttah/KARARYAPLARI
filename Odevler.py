@@ -5,7 +5,7 @@ if not Ad.strip().isalpha():
     print("Adınızı girmek için kelime girmelisiniz.")
     print("Ad bilgisini bos gecemezsiniz !")
     print("Programı tekrar çalıştırıp doğru bir yaş değeri girmelisiniz.")
-print(":ıkmak için esc'ye basın")
+print("Çıkmak için esc'ye basın")
 keyboard.wait("esc")
 
 Soyad = input("Lütfen Soyadınızı giriniz: ")
