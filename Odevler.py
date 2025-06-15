@@ -1,5 +1,5 @@
-for name in range(10): 
-    Ad = input("Lütfen adınızı giriniz: ")
+
+Ad = input("Lütfen adınızı giriniz: ")
        
 if not Ad.strip().isalpha():
     print("Adınızı girmek için kelime girmelisiniz.")
