@@ -1,13 +1,16 @@
+import colorama
+from colorama import Fore
 while True: 
+   
     Ad = input("Lütfen adınızı giriniz: ")
     if Ad == "":    
-        print("Ad bilgisini bos gecemezsiniz !")
-        print("Başa dön")
+        print(Fore.RED, "Ad bilgisini bos gecemezsiniz !")
+        print(Fore.WHITE, "Başa dön")
         print("")
         continue
     if not Ad.strip().isalpha():
-        print("Adınızı girmek için kelime girmelisiniz.") 
-        print("Başa dön")
+        print(Fore.RED, "Adınızı girmek için kelime girmelisiniz.") 
+        print(Fore.WHITE, "Başa dön")
         print("") 
         continue  
     break 
@@ -15,13 +18,13 @@ while True:
 while True:
     Soyad = input("Lütfen Soyadınızı giriniz: ")
     if Soyad == "":
-         print("Soyadı bilgisini boş geçemezsiniz.")
-         print("Başa dön")
+         print(Fore.RED, "Soyadı bilgisini boş geçemezsiniz.")
+         print(Fore.WHITE, "Başa dön")
          print("") 
          continue
     if not Soyad.isalpha():
-        print("Soyadınızı girmek için kelime girmelisiniz.")
-        print("Başa dön")
+        print(Fore.RED, "Soyadınızı girmek için kelime girmelisiniz.")
+        print(Fore.WHITE,"Başa dön")
         print("") 
         continue
     break
@@ -29,11 +32,11 @@ while True:
 while True:
     yas = input("Lütfen yaşınızı giriniz: ")
     if yas == "":
-        print("Yas bilgisini bos gecemezsiniz !")
+        print(Fore.RED, "Yas bilgisini bos gecemezsiniz !")
+        print(Fore.WHITE, "Başa Dön")
         continue
     if not yas.strip().isdigit():
-        print("Yaş bilgisi için sayı girmelisiniz.") 
-        print("Yas bilgisini bos gecemezsiniz !")
+        print(Fore.RED,"Yaş bilgisi için sayı girmelisiniz.")
         continue
     break
 
@@ -47,5 +50,5 @@ if int(yas) >= 25:
         print("Yaşınız:" , yas, "\n\n -> Yetişkin Kategorisindesiniz.") 
 
 print("")
-print("Hoşgeldiniz", Ad, Soyad, "\nYaşınız: ", yas)
-print("")
+print(Fore.BLUE, "Hoşgeldiniz:", Fore.WHITE, Ad, Soyad)      
+print(Fore.BLUE, "Yaşiniz:", Fore.WHITE, yas)
