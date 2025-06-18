@@ -1,7 +1,7 @@
 import colorama
 from colorama import Fore
 while True: 
-   
+    print(Fore.GREEN)
     Ad = input("Lütfen adınızı giriniz: ")
     if Ad == "":    
         print(Fore.RED, "Ad bilgisini bos gecemezsiniz !")
@@ -16,6 +16,7 @@ while True:
     break 
 
 while True:
+    print(Fore.GREEN)
     Soyad = input("Lütfen Soyadınızı giriniz: ")
     if Soyad == "":
          print(Fore.RED, "Soyadı bilgisini boş geçemezsiniz.")
@@ -30,6 +31,7 @@ while True:
     break
 
 while True:
+    print(Fore.GREEN)
     yas = input("Lütfen yaşınızı giriniz: ")
     if yas == "":
         print(Fore.RED, "Yas bilgisini bos gecemezsiniz !")
