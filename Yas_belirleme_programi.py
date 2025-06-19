@@ -1,7 +1,7 @@
 import colorama
 from colorama import Fore
 while True: 
-    print(Fore.GREEN)
+    print(Fore.BLUE)
     Ad = input("Lütfen adınızı giriniz: ")
     if Ad == "":    
         print(Fore.RED, "Ad bilgisini bos gecemezsiniz !")
@@ -16,7 +16,7 @@ while True:
     break 
 
 while True:
-    print(Fore.GREEN)
+    print(Fore.BLUE)
     Soyad = input("Lütfen Soyadınızı giriniz: ")
     if Soyad == "":
          print(Fore.RED, "Soyadı bilgisini boş geçemezsiniz.")
@@ -31,25 +31,27 @@ while True:
     break
 
 while True:
-    print(Fore.GREEN)
+    print(Fore.WHITE)
     yas = input("Lütfen yaşınızı giriniz: ")
     if yas == "":
         print(Fore.RED, "Yas bilgisini bos gecemezsiniz !")
         print(Fore.WHITE, "Başa Dön")
+        print("")
         continue
     if not yas.strip().isdigit():
         print(Fore.RED,"Yaş bilgisi için sayı girmelisiniz.")
+        print(Fore.WHITE,"Başa dön")
+        print("")
         continue
     break
-
 if int(yas) >=0 and int(yas)<= 12:
-    print("Yaşınız:" , yas, "\n\n -> Çocuk Kategorisindesiniz.")
+    print(Fore.YELLOW, "\n -> Çocuk Kategorisindesiniz.")
 if int(yas) >= 13 and int(yas) < 17:
-        print("Yaşınız:" , yas, "\n\n -> Genç Kategorisindesiniz.")
+        print(Fore.YELLOW, "\n -> Genç Kategorisindesiniz.")
 if int(yas) >= 18 and int(yas) <= 24:
-        print("Yaşınız:" , yas, "\n\n -> Genç Yetişkin Kategorisindesiniz.")
+        print(Fore.YELLOW, "\n -> Genç Yetişkin Kategorisindesiniz.")
 if int(yas) >= 25:
-        print("Yaşınız:" , yas, "\n\n -> Yetişkin Kategorisindesiniz.") 
+        print(Fore.YELLOW, "\n -> Yetişkin Kategorisindesiniz.") 
 
 print("")
 print(Fore.BLUE, "Hoşgeldiniz:", Fore.WHITE, Ad, Soyad)      
