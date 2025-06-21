@@ -33,7 +33,7 @@ while True:
 while True:
     print(Fore.WHITE)
     yas = input("Lütfen yaşınızı giriniz: ")
-    if yas == "":
+    if yas == "" :
         print(Fore.RED, "Yas bilgisini bos gecemezsiniz !")
         print(Fore.WHITE, "Başa Dön")
         print("")
